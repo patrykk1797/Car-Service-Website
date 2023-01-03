@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="pl" xml:lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Formularz kontakowy</title>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="shortcut icon" href="ikona.ico" type="image/x-icon">
+
+
+<style>
+body {margin:0 auto;
+text-align: center;
+  background-color: #EEEEEE;
+   font-family: Arial, "Trebuchet MS", sans-serif;
+   color:#333333;
+	}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #3399ff;
+}
+h1{
+ font-family:Helvetica;
+  color:#0066FF;
+  text-align:center;
+}
+
+h2{
+   font-family: Helvetica;
+   color:#0066FF;
+   text-align:center;
+}
+
+
+* {
+  box-sizing: border-box;
+
+			
+		
+	
+}
+
+	div.box {
+			margin:0 auto;
+			width:600px;
+			background:#cce6ff;
+			position:relative;
+			top:50px;
+			border:1px solid #cce6ff;
+		}
+		
+		
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #3399ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+.container1 {
+  border-radius: 5px;
+  background-color: #EEEEEE;;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+</style>
+</head>
+
+
+
+
+
+    <body>
+
+  <ul>
+  <li><a href="index.html">Strona główna</a></li>
+  <li><a href="javascript:history.back()">&larr; Wstecz</a></li>
+  <li><a  href="modele.html">Nasze modele</a></li>
+  <li><a href="https://bawariamotors.otomoto.pl/">Używane</a></li>
+  <li><a class="active" href="formularze.html">Formularz kontaktowy</a></li>
+  <li><a href="kontakt.html">Strona Informacyjna</a></li>
+</ul>
+
+
+
+
+    <br>
+	<br>
+    <img src="logo.jpg"  alt="BMW Kwiatkowski">
+
+
+
+<h2>Formularz kontaktowy</h2>
+ 
+ <form>
+ <div class= "box">
+ <div class="container1">
+ 
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Imię i nazwisko</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Napisz swoje imię i nazwisko..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="email" placeholder="Twój email..">
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="tel">Nr telefonu</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="tel" name="tel" placeholder="Napisz nr telefonu...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="temat">Temat</label>
+    </div>
+    <div class="col-75">
+      <select id="temat" name="temat">
+        <option value="seria">Dostępność modelu</option>
+  <option value="seria">Dostępność części</option>
+  <option value="seria">Umówienie na serwis</option>
+  <option value="seria">Kredytowanie</option>
+  <option value="seria">Jazda testowa</option>
+  <option value="seria">Oferta dla firm</option>
+  <option value="seria">Szkolenia</option>
+  <option value="seria">Praca</option>
+ 
+ 
+      </select>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Tekst wiadomości</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Treść wiadomości.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Wyślij">
+  </div>
+  
+  
+  </div>
+</div>
+  
+  </form>
+  
+  
+  
+  
+
+			<p>
+		  <i>Skontaktujemy się państwem najszybciej jak to możliwe.</i>
+
+			</p>
+        <footer>&#169; Patryk Kwiatkowski</footer>
+
+</body></html>
